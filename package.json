@@ -1,0 +1,22 @@
+﻿{
+  "name": "dsh-plugin-dlidl",
+  "version": "0.1.0",
+  "description": "DliDli — Bilibili-style danmaku mode for DeepSeek Harness: the model's streaming reply flies across the top of the window as bullet comments, while the composer stays put.",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": { "default": "./lib/index.js" },
+    "./client": { "default": "./lib/client.js" },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "keywords": ["deepseek", "harness", "dsh", "dsh-plugin", "danmaku", "ui"],
+  "engines": { "dsh": ">=0.2.1-rc.5" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web" }
+  },
+  "peerDependencies": { "@deepseek-ai/cordis": "^4.0.2" },
+  "files": ["lib/index.js", "lib/client.js", "cordis.patch.yml", "README.md", "LICENSE"]
+}
