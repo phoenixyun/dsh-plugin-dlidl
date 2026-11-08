@@ -1,7 +1,7 @@
 ﻿{
   "name": "dsh-plugin-dlidl",
-  "version": "0.1.0",
-  "description": "DliDli — Bilibili-style danmaku mode for DeepSeek Harness: the model's streaming reply flies across the top of the window as bullet comments, while the composer stays put.",
+  "version": "0.2.0",
+  "description": "DliDli — danmaku and live-chat overlays for DeepSeek Harness: stream reasoning and answers as a right-hand chat timeline (with per-row fade) or as Bilibili-style flying bullets across the window, with filters and per-mode settings.",
   "license": "MIT",
   "type": "module",
   "main": "lib/index.js",
